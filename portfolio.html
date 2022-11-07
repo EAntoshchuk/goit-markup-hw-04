@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
+    <!-- Header -->
+
     <header class="header">
       <div class="container header-container">
         <a class="header-logo" lang="en" href="./index.html">
@@ -41,18 +43,27 @@
             </li>
           </ul>
         </nav>
-        <ul class="header-contacts">
-          <li class="header-contacts-list">
+        <ul class="header-contacts-list">
+          <li class="header-contacts-item">
+            <svg class="contacts-icon" width="16" height="12">
+              <use href="/images/icons.svg#envelope"></use>
+            </svg>
             <a class="header-email" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
-          <li class="header-contacts-list">
+          <li class="header-contacts-item">
+            <svg class="contacts-icon" width="10" height="16">
+              <use href="./images/icons.svg#smartphone"></use>
+            </svg>
             <a class="header-tel" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
+
+    <!-- Menu -->
+
     <main class="portfolio-main-container">
       <section class="section section-projects">
         <div class="container projects-container">
@@ -80,6 +91,9 @@
               </li>
             </ul>
           </div>
+
+          <!-- Gallery -->
+
           <div class="container porfolio-projects">
             <ul class="list-portfolio card-set">
               <li class="list-portfolio-item card-set-item">
@@ -188,35 +202,97 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+
     <footer class="footer">
-      <div class="container">
-        <a class="footer-logo" lang="en" href="./index.html">
-          <span class="web-logo">Web</span>Studio</a
-        >
-        <address>
-          <ul class="footer-list">
-            <li class="footer-list-item">
+      <div class="container footer-container">
+        <div class="footer-contacts">
+          <a class="footer-logo" lang="en" href="./index.html">
+            <span class="web-logo">Web</span>Studio</a
+          >
+          <address>
+            <ul class="footer-list">
+              <li class="list-studio footer-list-item">
+                <a
+                  class="footer-adress"
+                  href="https://goo.gl/maps/SowUrspjPFDkWuth7"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  м. Київ, пр-т Лесі Українки, 26
+                </a>
+              </li>
+              <li class="list-studio footer-list-item">
+                <a class="footer-mail" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="list-studio footer-list-item">
+                <a class="footer-tel" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-connection-container">
+          <h3 class="footer-connection-title">приєднуйтесь</h3>
+          <ul class="socials-list">
+            <li class="socials-item">
               <a
-                class="footer-adress"
-                href="https://goo.gl/maps/SowUrspjPFDkWuth7"
+                class="socials-link"
+                href="https://instagram.com"
                 target="_blank"
-                rel="noopener noreferrer nofollow"
+                rel="noopener noreferrer"
+                aria-label="Instagram icon"
               >
-                м. Київ, пр-т Лесі Українки, 26
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram-link"></use>
+                </svg>
               </a>
             </li>
-            <li class="footer-list-item">
-              <a class="footer-mail" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://twitter.com"
+                aria-label="Twitter icon"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter-link"></use>
+                </svg>
+              </a>
             </li>
-            <li class="footer-list-item">
-              <a class="footer-tel" href="tel:+380961111111"
-                >+38 096 111 11 11</a
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://facebook.com"
+                aria-label="Facebook icon"
+                target="_blank"
+                rel="noopener noreferrer"
               >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook-link"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-item">
+              <a
+                class="socials-link"
+                href="https://linkedin.com"
+                aria-label="LinkedIn icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin-link"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
