@@ -176,6 +176,7 @@ img {
 }
 
 /*----------------------Main-----------------*/
+/* Hero */
 .hero {
   max-width: 1600px;
   margin: 0 auto;
@@ -220,6 +221,8 @@ img {
   cursor: pointer;
 }
 
+/* About us */
+
 .about-us-list {
   display: flex;
 }
@@ -241,6 +244,7 @@ img {
 .icon-clock::before {
   background-image: url(/images/clock.svg);
 }
+
 .icon-diagram::before {
   background-image: url(/images/diagram.svg);
 }
@@ -248,9 +252,11 @@ img {
 .icon-astronaut::before {
   background-image: url(/images/astronaut.svg);
 }
+
 .about-us-list-item:not(:last-child) {
   margin-right: 30px;
 }
+
 .list-studio-title {
   margin-bottom: 10px;
   font-style: normal;
@@ -258,15 +264,18 @@ img {
   line-height: calc(16 / 14);
   text-transform: uppercase;
 }
+
 .title-text {
-  widows: 270px;
+  width: 270px;
   line-height: calc(24 / 14);
   color: var(--description-text);
 }
+
 .cases-section {
   display: flex;
   padding-top: 0;
 }
+
 .cases,
 .team {
   margin-bottom: 50px;
@@ -274,6 +283,8 @@ img {
   line-height: calc(42 / 36);
   text-align: center;
 }
+
+/* Team */
 
 .team-section {
   display: flex;
@@ -308,6 +319,8 @@ img {
   text-align: center;
   color: var(--description-text);
 }
+
+/* Clients */
 
 .client-title {
   margin-bottom: 50px;
@@ -346,6 +359,8 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* Socials links */
+
 .socials-list {
   display: flex;
   justify-content: center;
@@ -368,6 +383,8 @@ img {
   fill: #ffffff;
   background-color: #2196f3;
 }
+
+/* Buttons */
 
 .hero-button:hover,
 .hero-button:focus,
@@ -400,6 +417,9 @@ img {
   cursor: pointer;
 }
 
+/* Portfolio */
+/* Portfolio menu */
+
 .portfolio-filter {
   display: flex;
   justify-content: center;
@@ -420,12 +440,15 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* Gallery */
+
 .portfolio-card-description {
   padding: 20px 24px;
   border-right: 1px solid var(--portfolio-border-color);
   border-bottom: 1px solid var(--portfolio-border-color);
   border-left: 1px solid var(--portfolio-border-color);
 }
+
 .card-set {
   display: flex;
   flex-wrap: wrap;
@@ -446,10 +469,11 @@ img {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-
   color: var(--description-text);
 }
+
 /*----------------------Footer-----------------*/
+/*  */
 .footer {
   padding: 60px 0px;
   background-color: #2f303a;
@@ -489,6 +513,7 @@ img {
 .footer-adress {
   text-decoration: none;
 }
+
 .footer-mail,
 .footer-tel {
   font-style: normal;
