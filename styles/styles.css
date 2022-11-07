@@ -1,6 +1,7 @@
 :root {
   --body-color: #212121;
   --main-title-color: #ffffff;
+  --bg-color: #c4c4c4;
   --hero-btn-color: #ffffff;
   --secondary-title-color: #ffffff;
   --secondary-btn-color: #212121;
@@ -29,12 +30,14 @@ body {
 .site-nav,
 .site-nav-list,
 .footer-list,
-.header-contacts,
+.header-contacts-list,
 .portfolio-menu,
 .portfolio-menu-item,
 .about-us-list,
 .cases-cards,
-.team-list {
+.team-list,
+.clients-list,
+.socials-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -133,12 +136,18 @@ img {
 .site-nav-item:active {
   color: var(--link-active);
 }
-.header-contacts {
+.header-contacts-list {
   display: flex;
   margin-left: auto;
   padding: 0;
 }
-.header-contacts-list:not(:last-child) {
+
+.header-contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-contacts-item:not(:last-child) {
   margin-right: 50px;
 }
 .header-email,
@@ -150,6 +159,15 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
+
+.contacts-icon {
+  margin-right: 10px;
+}
+.header-contacts-item:hover,
+.header-contacts-item:focus {
+  fill: var(--link-decoration-color);
+}
+
 .header-email:hover,
 .header-tel:hover,
 .header-email:focus,
@@ -159,8 +177,19 @@ img {
 
 /*----------------------Main-----------------*/
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 200px 0;
-  background-color: #2f303a;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-bg-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--bg-color);
 }
 .hero-title {
   width: 700px;
@@ -193,6 +222,31 @@ img {
 
 .about-us-list {
   display: flex;
+}
+
+.about-us-list-item::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+}
+
+.icon-satellite::before {
+  background-image: url(/images/satellite.svg);
+}
+
+.icon-clock::before {
+  background-image: url(/images/clock.svg);
+}
+.icon-diagram::before {
+  background-image: url(/images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(/images/astronaut.svg);
 }
 .about-us-list-item:not(:last-child) {
   margin-right: 30px;
@@ -248,10 +302,73 @@ img {
 }
 
 .profession {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
   color: var(--description-text);
+}
+
+.client-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.clients-list-item {
+  display: block;
+  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  background-color: #f5f4fa;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-list-item:hover,
+.clients-list-item:focus {
+  border: 2px solid;
+  border-color: #188ce8;
+  fill: #2196f3;
+}
+
+.clients-icon {
+  fill: #afb1b8;
+}
+/* .clients-icon:hover,
+.clients-icon:focus {
+  fill: #2196f3;
+} */
+.socials-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.socials-link {
+  fill: #afb1b8;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  fill: #ffffff;
+  background-color: #2196f3;
 }
 
 .hero-button:hover,
@@ -334,6 +451,12 @@ img {
   background-color: #2f303a;
 }
 
+.footer-container {
+  display: flex;
+}
+.footer-contacts {
+  margin-right: 70px;
+}
 .footer-logo {
   text-decoration: none;
 }
@@ -379,4 +502,18 @@ img {
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--web-logo-color);
+}
+
+.footer-connection-container {
+  margin-right: auto;
+}
+.footer-connection-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
