@@ -17,6 +17,12 @@
   --items: 3;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -238,19 +244,19 @@ img {
 }
 
 .icon-satellite::before {
-  background-image: url(./images/satellite.svg);
+  background-image: url(../images/satellite.svg);
 }
 
 .icon-clock::before {
-  background-image: url(./images/clock.svg);
+  background-image: url(../images/clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(./images/diagram.svg);
+  background-image: url(../images/diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(./images/astronaut.svg);
+  background-image: url(../images/astronaut.svg);
 }
 
 .about-us-list-item:not(:last-child) {
@@ -333,10 +339,6 @@ img {
   justify-content: center;
   align-items: center;
   gap: 30px;
-}
-
-.clients-list-item {
-  box-sizing: border-box;
 }
 
 .clients-link {
