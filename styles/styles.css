@@ -17,12 +17,6 @@
   --items: 3;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -549,6 +543,7 @@ img {
   margin-right: auto;
 }
 .footer-connection-title {
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
