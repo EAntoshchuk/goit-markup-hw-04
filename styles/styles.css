@@ -354,7 +354,6 @@ img {
   border: 1px solid;
   border-color: var(--link-active);
   fill: var(--link-decoration-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Socials links */
@@ -444,6 +443,7 @@ img {
 }
 
 .list-portfolio-link:hover {
+  text-decoration: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -493,9 +493,6 @@ img {
 .footer-contacts {
   margin-right: 70px;
 }
-.footer-logo {
-  text-decoration: none;
-}
 
 .footer-logo {
   display: block;
@@ -506,6 +503,7 @@ img {
   font-size: 26px;
   line-height: calc(31 / 26);
   color: var(--main-title-color);
+  text-decoration: none;
 }
 
 .footer-list-item:not(:last-child) {
@@ -562,10 +560,6 @@ img {
   border-radius: 50%;
   fill: var(--footer-icon-color);
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-connection-container .socials-item:nth-child(2n + 1) {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .footer-connection-container .socials-icon {
